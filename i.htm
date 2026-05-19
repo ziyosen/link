@@ -2180,7 +2180,7 @@
 
   // Function to check proxy status in the list
 function checkProxyStatusInList(proxy, statusBadge) {
-  const statusURL = `https://afrcloud.dpdns.org/${proxy.ip}:${proxy.port}`
+  const statusURL = `https://proxyip.afrcloudn.qzz.io/${proxy.ip}:${proxy.port}`
 
   fetch(statusURL)
     .then((response) => response.json())
@@ -2367,7 +2367,7 @@ function checkProxyStatusInList(proxy, statusBadge) {
 // Function to check proxy status in the account creation section
 function checkProxyStatus(proxy) {
   const startTime = performance.now()
-  const statusURL = `https://afrcloud.dpdns.org/${proxy.ip}:${proxy.port}`
+  const statusURL = `https://proxyip.afrcloudn.qzz.io/${proxy.ip}:${proxy.port}`
   const statusContainer = document.getElementById("proxy-status-container")
   const statusLoading = document.getElementById("proxy-status-loading")
   const statusActive = document.getElementById("proxy-status-active")
